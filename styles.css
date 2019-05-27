@@ -1,0 +1,52 @@
+
+
+
+h1{
+    text-align: center;
+    color: white;
+    text-shadow: 6px 6px black;
+}
+.header-menu{
+    position: relative;
+    
+}
+.header{
+    background-color: red;
+    height: 100%;
+    position: relative;
+    /* width: 87%; */
+
+}
+body{
+    background-color: lightblue;
+}
+.nav-icon {
+    margin: 1em;
+    width: 40px;
+    position: absolute;
+    right: 0;
+}
+
+.nav-icon:after,
+.nav-icon:before,
+.nav-icon div {
+    background-color: orange;
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 5px;
+    margin: 7px 0;
+    transition: all .2s ease-in-out;
+}
+
+.nav-icon:hover:before {
+    transform: translateY(12px) rotate(135deg);
+}
+
+.nav-icon:hover:after {
+    transform: translateY(-12px) rotate(-135deg);
+}
+
+.nav-icon:hover div {
+    transform: scale(0);
+}
